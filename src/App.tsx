@@ -1,4 +1,6 @@
 import { useState } from "react";
+import WeatjerCard from "./components/WeatherCard";
+import useWeather from "./hooks/useWeather";
 
 function App() {
   const [city, setCity] = useState("");
