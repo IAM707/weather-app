@@ -1,5 +1,5 @@
-// WeatherCard.tsx
-const WeatherCard = ({ data }: any) => {
+import type { WeatherData } from "../type";
+const WeatherCard = ({ data }: { data: WeatherData }) => {
   if (!data) return null;
 
   return (

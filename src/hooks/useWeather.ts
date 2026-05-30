@@ -1,9 +1,9 @@
 // src/hooks/useWeather.ts
 import { useState } from "react";
-
+import type { WeatherData } from "../type";
 export const useWeather = () => {
   const [city, setCity] = useState("");
-  const [weather, setWeather] = useState(null);
+  const [weather, setWeather] = useState<WeatherData | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
